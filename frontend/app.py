@@ -1,9 +1,9 @@
 import pandas as pd
 import streamlit as st
-import pickle
+import fickling
 
 # Load the model
-model = pickle.load(open('random_forest_model.pkl', 'rb'))
+model = fickling.load(open('random_forest_model.pkl', 'rb'))
 
 # Print feature names expected by the model (for debugging)
 print("Features expected by the model:", model.feature_names_in_)

@@ -1,8 +1,9 @@
-import pickle
 import pandas as pd
+import fickling
+
 # Load the pickle file
 with open('random_forest_model.pkl', 'rb') as file:
-    content = pickle.load(file)
+    content = fickling.load(file)
 
 # Print the type of the loaded object
 print(f'Type of the content: {type(content)}')
