@@ -1,10 +1,10 @@
 import streamlit as st
-import pickle
 import pandas as pd
+import fickling
 
 # Load the Random Forest model from the pickle file
 with open('random_forest_model.pkl', 'rb') as file:
-    rf_model = pickle.load(file)
+    rf_model = fickling.load(file)
 
 # Streamlit app header
 st.title('Appendicitis Prediction using Random Forest')
